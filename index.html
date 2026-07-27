@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Stillmark Studio — Field manuals for focused work</title>
+<meta name="description" content="Quiet, practical tools for deep work: the Deep Work, Real Life field manual, guided journals, and minimalist wall art. Made by Stillmark Studio."/>
+<style>
+  :root{
+    --ink:#14301f; --body:#33463b; --muted:#6b7a70; --gold:#b08d46;
+    --cream:#f7f5ee; --paper:#fdfcf9; --line:#e2ded2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);
+       color:var(--body);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+
+  /* entrance animation — plays once, then rests */
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .rise{animation:rise .7s ease-out both}
+  .rise-1{animation-delay:.08s}.rise-2{animation-delay:.16s}.rise-3{animation-delay:.24s}
+
+  header{padding:34px 0 26px;border-bottom:1px solid var(--line)}
+  .brand{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--gold)}
+  nav{float:right;margin-top:2px}
+  nav a{font-size:13px;color:var(--muted);text-decoration:none;margin-left:26px;
+        letter-spacing:.5px}
+  nav a:hover{color:var(--ink)}
+
+  .hero{padding:96px 0 88px;border-bottom:1px solid var(--line)}
+  .hero h1{font-size:clamp(34px,5vw,52px);line-height:1.14;color:var(--ink);
+           max-width:640px;font-weight:normal}
+  .hero p{max-width:520px;margin-top:22px;font-size:18px;color:var(--body)}
+  .hero .rule{width:64px;border-top:2px solid var(--gold);margin-bottom:28px}
+
+  section{padding:72px 0}
+  .section-head{margin-bottom:48px}
+  .section-head h2{font-size:13px;letter-spacing:3px;text-transform:uppercase;
+                   color:var(--gold);margin-bottom:10px}
+  .section-head p{color:var(--muted);max-width:460px}
+
+  .product{display:grid;grid-template-columns:300px 1fr;gap:56px;
+           padding:40px 0;border-top:1px solid var(--line)}
+  .product:first-of-type{border-top:none}
+  .product .thumb{background:var(--cream);border:1px solid var(--line);
+                  aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;
+                  overflow:hidden}
+  .product .thumb img{width:100%;height:100%;object-fit:cover}
+  .product h3{font-size:26px;color:var(--ink);font-weight:normal;margin-bottom:6px}
+  .product .price{font-size:15px;color:var(--gold);margin-bottom:18px}
+  .product p{max-width:480px;margin-bottom:14px}
+  .product ul{margin:0 0 22px 18px;font-size:15px}
+  .product li{margin-bottom:6px}
+  .btn{display:inline-block;background:var(--ink);color:var(--paper);
+       padding:13px 30px;font-size:14px;letter-spacing:1px;text-decoration:none;
+       border-radius:2px;transition:background .2s}
+  .btn:hover{background:#2c4a38}
+  .btn .sans{font-size:14px}
+  .btn.disabled{background:#b9c2bb;pointer-events:none}
+  .soon{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);
+        margin-left:14px}
+
+  .about{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .about p{max-width:440px;margin-bottom:16px}
+  .principles{list-style:none}
+  .principles li{padding:14px 0;border-top:1px solid var(--line);font-size:15px}
+  .principles li strong{color:var(--ink);font-weight:normal}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 60px;font-size:13px;
+         color:var(--muted)}
+  footer a{color:var(--muted)}
+  .disclosure{margin-top:14px;font-size:12px;max-width:560px;line-height:1.7}
+
+  @media(max-width:760px){
+    .product,.about{grid-template-columns:1fr;gap:28px}
+    .product .thumb{max-width:280px}
+    nav{display:none}
+    .hero{padding:64px 0}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="brand sans rise">Stillmark Studio</span>
+    <nav class="sans rise rise-1">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="mailto:hello@stillmark.studio">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="rule rise"></div>
+    <h1 class="rise rise-1">Field manuals for focused work in a distracted world.</h1>
+    <p class="rise rise-2">Quiet, practical tools — a deep work protocol, guided journals,
+    and minimalist prints — for people who want their attention back. No noise, no hustle,
+    no 4 AM alarms.</p>
+  </div>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="sans">Products</h2>
+      <p>Everything here is digital, instant, and yours to keep. Prices in USD.</p>
+    </div>
+
+    <div class="product">
+      <div class="thumb"><img src="assets/cover-ebook.png" alt="Deep Work, Real Life — ebook cover"/></div>
+      <div>
+        <h3>Deep Work, Real Life</h3>
+        <div class="price sans">$14 · 61-page PDF</div>
+        <p>A field manual for focus, built around one 90-minute block a day. Attention residue,
+        ultradian rhythms, shutdown rituals — the research, translated into a 14-day protocol
+        you can actually run inside a normal job.</p>
+        <ul>
+          <li>The complete 14-day focus protocol, day by day</li>
+          <li>Entry, shutdown &amp; reset rituals that survive real life</li>
+          <li>Printable tracker, session log &amp; troubleshooting guide</li>
+        </ul>
+        <a class="btn sans" href="https://stillmark.gumroad.com/l/deep-work-real-life" data-product="deep-work-real-life">Get the field manual</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="thumb"><img src="assets/cover-journal.png" alt="The Quiet Reset — journal cover"/></div>
+      <div>
+        <h3>The Quiet Reset</h3>
+        <div class="price sans">$7 · 9-page printable PDF</div>
+        <p>A 7-day guided journal for noisy weeks. Three prompts and one small action each
+        evening — ten minutes to empty your head and find the one thing that matters tomorrow.
+        Pairs with the field manual or stands alone.</p>
+        <ul>
+          <li>7 daily pages, print or tablet (GoodNotes/Notability)</li>
+          <li>US Letter, generous writing space</li>
+          <li>Repeatable whenever the noise builds</li>
+        </ul>
+        <a class="btn sans" href="https://stillmark.gumroad.com/l/quiet-reset-journal" data-product="quiet-reset-journal">Get the journal</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="thumb"><img src="assets/cover-wallart.png" alt="Stillness Studies — wall art set"/></div>
+      <div>
+        <h3>Stillness Studies — Wall Art Set</h3>
+        <div class="price sans">$5 · 3 prints · A4 300 DPI</div>
+        <p>Three minimalist prints for the wall above your desk: a line-art boat on calm water,
+        soft abstract arches, and one quiet reminder — <em>one thing at a time</em>.
+        Print at home or at any print shop.</p>
+        <ul>
+          <li>3 high-resolution files (A4, 300 DPI, scales to A3)</li>
+          <li>Cream, sage &amp; terracotta palette</li>
+          <li>Personal use license</li>
+        </ul>
+        <a class="btn sans" href="https://stillmark.gumroad.com/l/stillness-studies" data-product="stillness-studies">Get the prints</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="background:var(--cream);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="sans">About</h2>
+    </div>
+    <div class="about">
+      <div>
+        <p>Stillmark Studio makes tools for a simple thesis: <strong>your attention is the
+        asset</strong>. The best things you will ever produce are on the other side of
+        ninety uninterrupted minutes — and almost nobody around you is getting those minutes.</p>
+        <p>Our products are built on published research — attention residue (Leroy, 2009),
+        ultradian rhythms (Kleitman), deliberate practice (Ericsson), flow (Csikszentmihalyi) —
+        and designed for real lives: jobs with meetings, phones you'd like to keep,
+        finite willpower.</p>
+      </div>
+      <ul class="principles">
+        <li><strong>Protocol over motivation.</strong> Systems that run on bad days, not inspiration that requires good ones.</li>
+        <li><strong>One block a day beats heroic Mondays.</strong> Consistency is the compounding mechanism.</li>
+        <li><strong>Quiet design.</strong> No gamification, no streaks-shaming, no dopamine tricks. Tools, not slot machines.</li>
+        <li><strong>Honest making.</strong> Created with AI assistance; reviewed, edited and curated by the studio.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Stillmark Studio · All products are digital downloads · Instant delivery via Gumroad</div>
+    <div style="margin-top:8px"><a href="mailto:hello@stillmark.studio">hello@stillmark.studio</a> ·
+    <a href="https://stillmark.gumroad.com">Gumroad store</a></div>
+    <div class="disclosure">Transparency: Stillmark Studio products are created with AI assistance
+    and reviewed, edited, and curated by the publisher, in line with Gumroad, Etsy and Amazon KDP
+    content policies. Educational material; not medical or psychological advice. Purchases are
+    licensed for personal use.</div>
+  </div>
+</footer>
+</body>
+</html>
